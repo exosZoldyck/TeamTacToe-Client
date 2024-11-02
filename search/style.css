@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Determination Sans';
+    src: url('../assets/fonts/dtmsans.woff');
+}
+
+html{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    overflow: hidden;
+
+    background-color: #1f1f1f;
+
+    /*background-image: url('../assets/backgrounds/background.webp');
+    background-repeat: repeat;
+    background-position: 10%;*/
+}
+
+.dt-font{
+    color: white;
+    font-family: 'Determination Sans';
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+}
+
+.big-header-container{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 120px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.big-header{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    margin-top: 10px;
+    color: white;
+    font-size: 5rem;
+}
+
+.main-container{
+    width: 100%;
+    height: calc(100% - 120px - 30px);
+    padding: 0;
+    border: 0;
+    margin-top: 30px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box{
+    height: 100%;
+    width: 750px;
+    padding: 0;
+    border: 2px solid #2f2f2f;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    background-color: #2f2f2f;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box-loading-text{
+    min-width: 100%;
+
+    position: absolute;
+    top: 20px;
+
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.rooms-table{
+    width: 95%;
+    height: 95%;
+    margin-top: 10px;
+
+    display: none;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rooms-table tbody{
+    width: 100%;
+    height: fit-content;
+}
+
+.rooms-row{
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    border: 2px solid #2a2a2a;
+    border-radius: 10px;
+    margin: 0;
+
+    display: block;
+
+    background-color: #3f3f3f;
+}
+
+.rooms-row th{
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.rooms-rowjoinButton{
+    width: fit-content;
+    height: 50%;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid #4dcc8e;
+    border-radius: 10px;
+    margin: 0;
+
+    background-color: #4dcc8e;
+    transition-duration: 0.25s;
+
+    color: white;
+    font-size: 2.75rem;
+}
+
+.rooms-rowjoinButton:hover{
+    cursor: pointer;
+    background-color: #4dfc8e;
+    transition-duration: 0.25s;
+}
+
+@media screen and (max-width: 750px){ 
+    .rooms-row th{
+        font-size: 1.25rem;
+    }
+    
+    .rooms-rowjoinButton{
+        font-size: 2.25rem;
+    }
+
+    .big-header{
+        padding: 0;
+        border: 0;
+        margin: 0;
+        margin-top: 10px;
+        color: white;
+        font-size: 3.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 540px){ 
+    .rooms-row th{
+        font-size: 1rem;
+    }
+    
+    .rooms-rowjoinButton{
+        font-size: 1.75rem;
+    }
+
+    .big-header{
+        padding: 0;
+        border: 0;
+        margin: 0;
+        margin-top: 10px;
+        color: white;
+        font-size: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 400px){ 
+    .rooms-row th{
+        font-size: 1rem;
+    }
+    
+    .rooms-rowjoinButton{
+        font-size: 1.25rem;
+    }
+
+    .big-header{
+        padding: 0;
+        border: 0;
+        margin: 0;
+        margin-top: 10px;
+        color: white;
+        font-size: 2.5rem;
+    }   
+}

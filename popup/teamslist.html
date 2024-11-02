@@ -1,0 +1,26 @@
+<span class="popup" style="width: 705px; height: 520px;">
+    <h2 id="popup-header" class="popup-header dt-font">Waiting on players...</h2>
+    <span class="popup-teamsList-container">
+        <span class="popup-teamsList-subcontainer">
+            <span class="popup-teamsList-subheader dt-font">Team X</span>
+            <span id="popup-teamsList-col-1" class="popup-teamsList-col"></span>
+        </span>
+        <span class="popup-teamsList-subcontainer">
+            <span class="popup-teamsList-subheader dt-font">Team O</span>
+            <span id="popup-teamsList-col-2" class="popup-teamsList-col"></span>
+        </span>
+    </span>
+    <span class="popup-link-container">
+        <span id="popup-publicSelect-container" class="popup-publicSelect-container">
+            <form action="">
+                <input type="checkbox" name="Public" id="popup-publicSelect-checkbox" onclick="publicCheckbox_Click()">
+                <label for="Public" class="dt-font">Public</label>
+            </form>
+        </span>
+        <span class="popup-link-staticText dt-font">
+            <span style="margin-bottom: 12px;">Gameroom link:</span>
+        </span>
+        <span id="popup-link-textBox" class="popup-link-textBox dt-font" onclick="copyGameroomLink_Click()"></span>
+        <span id="popup-startGameButton" class="popup-startGameButton dt-font" onclick="startGame_Click()"><span class="popup-startGameButton-text">Start</span></span>
+    </span>
+</span>
